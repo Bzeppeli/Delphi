@@ -1,0 +1,30 @@
+unit QuadroCadastro;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Grids, DBGrids, DB, IBCustomDataSet, IBTable, IBDatabase,
+  ExtCtrls, DBCtrls;
+
+type
+  TFormCadastro = class(TForm)
+    DBGrid1: TDBGrid;
+    IBTabelaAluno: TIBTable;
+    IBDatabase1: TIBDatabase;
+    IBTransaction1: TIBTransaction;
+    DataSource1: TDataSource;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FormCadastro: TFormCadastro;
+
+implementation
+
+{$R *.dfm}
+
+end.

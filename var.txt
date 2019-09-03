@@ -1,0 +1,28 @@
+var
+  frmGetATR: TfrmGetATR;
+  hContext            : SCARDCONTEXT;
+  hCard               : SCARDCONTEXT;
+  ioRequest           : SCARD_IO_REQUEST;
+  retCode             : Integer;
+  dwActProtocol, BufferLen  : DWORD;
+  SendBuff, RecvBuff        : array [0..262] of Byte;
+  SendLen, RecvLen, nBytesRet : DWORD;
+  Buffer      : array [0..MAX_BUFFER_LEN] of char;
+  ATRVal              : array [0..128] of byte;
+  ATRLen              : ^DWORD;
+
+////////////////////////////////////////////////////////
+
+var
+  frmActive: TfrmActive;
+  hContext            : SCARDCONTEXT;
+  hCard               : SCARDCONTEXT;
+  ioRequest           : SCARD_IO_REQUEST;
+  retCode             : Integer;
+  dwActProtocol, BufferLen  : DWORD;
+  SendBuff, RecvBuff        : array [0..262] of Byte;
+  SendLen, RecvLen, nBytesRet : DWORD;
+  Buffer      : array [0..MAX_BUFFER_LEN] of char;
+  data        : string;
+
+//////////////////////////////////////////////////////////

@@ -1,0 +1,19 @@
+program Exemplo_preencher;
+
+uses
+  Forms,
+  Form_Principal in 'Form_Principal.pas' {Form1},
+  Form_Relatorio in 'Form_Relatorio.pas' {FormCadastro},
+  Form_Cadastro in 'Form_Cadastro.pas' {FormConsulta},
+  Form_Consulta in 'Form_Consulta.pas' {FormRelatorio};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormCadastro, FormCadastro);
+  Application.CreateForm(TFormConsulta, FormConsulta);
+  Application.CreateForm(TFormRelatorio, FormRelatorio);
+  Application.Run;
+end.

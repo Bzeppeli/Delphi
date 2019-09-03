@@ -1,0 +1,13 @@
+program Projectbasic;
+
+uses
+  Forms,
+  basic in 'basic.pas' {FormPrincipalBasic};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFormPrincipalBasic, FormPrincipalBasic);
+  Application.Run;
+end.
